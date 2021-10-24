@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url("https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 80px;
+        }
+        
+        #container {
+            position: absolute;
+            color: black;
+            box-shadow: 0 0 50px black;
+            width: 50%;
+            height: 90vh;
+            margin: 5% 20% 5% 20%;
+        }
+        
+        
+        
+        body:hover div {
+            position: absolute;
+            color: white;
+            box-shadow: 0 0 50px black;
+            backdrop-filter: blur(50px);
+        }
+        
+       
+        
+        form {
+            text-size-adjust: 40px;
+            padding-inline: 40px;
+        }
+        
+        .c{
+            color:green;}
+            button{
+                border-radius:10px;}
+            
+    </style>
+
+</head>
+
+<body>
+    <div id="container" style= "text-align: justify">
+        <form>
+            <h1 style="color: red; text-align: center">Indian Food Survey</h1>
+            <label class="c"><strong>Name</strong></label>
+            <input type="text" name="name" placeholder="enter your name" required minlength="3" pattern="[a-Z]" /><br><br>
+            <label class="c" minlength="10" maxlength="10"><strong>Phone Number</strong></label>
+            <select id= "s">
+            <option value="+91" selected>+91</option>
+        </select><input type="tel" minlength="10" /><br><br>
+            <label for="S" class="c"><strong>Gender</strong></label>
+            <select id="S">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select> <br><br>
+            <label class="c"><strong>Select the Food</strong></label>
+            <input type="Checkbox" />
+            <label>Rasmalai</label>
+            <input type="Checkbox" />
+            <label>Rotis</label>
+            <input type="Checkbox" />
+            <label>Fries</label>
+            <input type="Checkbox" />
+            <label>Dals</label><br><br>
+            <label class="c"><strong>Quality</strong></label>
+            <input type="radio" name="Q" />
+            <label>Poor</label>
+            <input type="radio" name="Q" />
+            <label>Good</label>
+            <input type="radio" name="Q" />
+            <label>Excellent</label>
+            <br><br>
+            <label class="c"><strong>Service</strong></label>
+            <input type="radio" name="S" />
+            <label>Poor</label>
+            <input type="radio" name="S" />
+            <label>Good</label>
+            <input type="radio" name="S" />
+            <label>Excellent</label>
+            <br><br>
+            <label class="c"><strong>Cleanliness</strong></label>
+            <input type="radio" name="C" />
+            <label>Poor</label>
+            <input type="radio" name="C" />
+            <label>Good</label>
+            <input type="radio" name="C" />
+            <label>Excellent</label>
+            <br><br>
+            <label class="c"><strong>Taste</strong></label>
+            <input type="radio" name="t" />
+            <label>Poor</label>
+            <input type="radio" name="t" />
+            <label>Good</label>
+            <input type="radio" name="t" />
+            <label>Excellent</label> <br><br>
+            
+            <label class="c">Suggestion</label><br>
+            <textarea style="margin:3px" cols="20" rows="8"></textarea>
+            <br><br>
+            <input type="Reset" value="Reset" style="border-radius:10px;"/>
+            <button>Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
